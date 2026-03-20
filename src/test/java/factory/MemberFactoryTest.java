@@ -14,17 +14,17 @@ class MemberFactoryTest {
     @Test
     void shouldCreateMemberUsingBuilder() {
 
-        Member member = new Member.Builder("M001", "Owen Nxasana")
+        Member member = new Member.Builder("M001", "Owe Nxasana")
                 .setMemberEmail("owen@email.com")
-                .setMemberPhone("0831234567")
+                .setMemberPhone("0832234567")
                 .setMembershipDate("2026-03-18")
                 .build();
 
         assertNotNull(member);
         assertEquals("M001", member.getMemberId());
-        assertEquals("Owen Nxasana", member.getMemberName());
+        assertEquals("Owe Nxasana", member.getMemberName());
         assertEquals("owen@email.com", member.getMemberEmail());
-        assertEquals("0831234567", member.getMemberPhone());
+        assertEquals("0832234567", member.getMemberPhone());
         assertEquals("2026-03-18", member.getMembershipDate());
     }
 
@@ -32,7 +32,7 @@ class MemberFactoryTest {
     void shouldThrowExceptionWhenIdIsMissing() {
 
         assertThrows(IllegalArgumentException.class, () -> {
-            new Member.Builder(null, "Owen")
+            new Member.Builder(null, "Owe")
                     .build();
         });
     }
@@ -41,7 +41,7 @@ class MemberFactoryTest {
     void shouldThrowExceptionWhenIdIsInvalid() {
 
         assertThrows(IllegalArgumentException.class, () -> {
-            new Member.Builder("123", "Owen")
+            new Member.Builder("123", "Owe")
                     .build();
         });
     }
@@ -59,7 +59,7 @@ class MemberFactoryTest {
     void shouldThrowExceptionWhenEmailIsInvalid() {
 
         assertThrows(IllegalArgumentException.class, () -> {
-            new Member.Builder("M003", "Owen")
+            new Member.Builder("M003", "Owe")
                     .setMemberEmail("invalid-email")
                     .build();
         });
