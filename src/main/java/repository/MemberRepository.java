@@ -1,5 +1,5 @@
 /* MemberRepository.java
-   Member repository interface
+   Member repository interface.
 
 */
 package repository;
