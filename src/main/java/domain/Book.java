@@ -1,8 +1,8 @@
 package domain;
 
 //Book domain class
-//Author:
-//Date:
+//Author: Nomhle Njengele
+//Date: 16 March 2026
 
 
 public class Book {
@@ -72,7 +72,7 @@ public class Book {
         public Book build() {
             return new Book(this);
 
-            //End of program
+            //End of program.
             
         }
     }
