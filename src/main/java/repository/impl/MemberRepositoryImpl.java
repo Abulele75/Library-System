@@ -1,7 +1,7 @@
 /* MemberRepositoryImpl.java
    Member repository implementation
    Author:
-   Date: 13 March 2026
+   Date: 13 March 2026.
 */
 package repository.impl;
 
